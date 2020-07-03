@@ -15,10 +15,53 @@
  */
  @import "bootstrap";
 
- #messages {
+ div.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ h2 {
+  padding: 1em;
+ }
+
+ h1 {
+   padding: 0.5em;
+ }
+
+ form + a {
+   margin-top: 1em;
+ }
+
+ a#new-chat-btn {
+   margin-bottom: 1em;
+ }
+
+ ul#chat-rooms-list {
+   width: 100%;
+ }
+
+ div#messages {
+  width: 100%;
   max-height: 450px;
+  overflow-x: hidden;
   overflow-y: auto;
   .avatar {
     margin: 0.5rem;
   }
+  .card {
+    margin-bottom: 0.5em;
+  }
+}
+
+form#new_message {
+  position: fixed;
+  padding: 0 1em 1em;
+  bottom: 0;
+  width: 100%;
+}
+
+#log-out-btn {
+  right: 0;
+  position: absolute;
 }
