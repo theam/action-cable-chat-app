@@ -6,7 +6,6 @@
 
 <%= form_for @message, url: '#' do |f| %>
   <div class="form-group">
-    <%= f.label :body %>
     <%= f.text_area :body, class: 'form-control', id: 'message_body' %>
     <small class="text-muted">From 2 to 1000 characters</small>
   </div>

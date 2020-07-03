@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% if user_signed_in? %>
+      <%= button_to("Logout", destroy_user_session_path, :method => :delete, 
+      class: 'btn btn-warning', id: 'log-out-btn') %>
+    <% end %>
+    <div class='container-fluid'>
+      <%= yield %>
+    </div>
   </body>
 </html>
