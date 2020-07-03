@@ -4,8 +4,9 @@ A simple chat app to create benchmarks and compare it to Booster: https://agilem
 ## Steps to run this project
 
 1. `bundle install`
-2. `docker-compose up` (remember to start Docker if you're on MacOS)
-3. `rails s` -> localhost:3000
+2. `yarn install`
+3. `docker-compose up` (remember to start Docker if you're on MacOS)
+4. `rails s` and go to localhost:3000
 
 ## Benchmarking Action Cable
 
