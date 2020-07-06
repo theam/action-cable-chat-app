@@ -1,11 +1,11 @@
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
     # When benchmarking, replace the line below for -> identified_by :id
-    identified_by :current_user
+    identified_by :id
 
     def connect
       # Modify this variable if you are planning to benchmark action cable
-      amIBenchmarking = false
+      amIBenchmarking = true
       if (amIBenchmarking)
         self.id = SecureRandom.uuid
         logger.add_tags 'ActionCable', id

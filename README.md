@@ -1,3 +1,6 @@
+# WARNING
+This branch is intended to be used temporarily and with the only objective of benchmarking the chat app. As soon as you finish your testing or benchmarking tasks, please **deploy the master branch again**.
+
 # action-cable-chat-app
 A simple chat app to create benchmarks and compare it to Booster: https://agilemonkeys.atlassian.net/browse/BOOST-759
 

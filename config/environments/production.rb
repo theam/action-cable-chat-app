@@ -8,6 +8,7 @@ Rails.application.configure do
     'https://rails-chat-app-action-cable.herokuapp.com',
     'http://rails-chat-app-action-cable.herokuapp.com'
   ]
+  config.action_cable.disable_request_forgery_protection = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
