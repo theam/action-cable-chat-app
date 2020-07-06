@@ -3,7 +3,7 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.action_cable.url = "ws://rails-chat-app-action-cable.herokuapp.com/cable"
+  config.action_cable.url = "wss://rails-chat-app-action-cable.herokuapp.com/cable"
   config.action_cable.allowed_request_origins = [
     'https://rails-chat-app-action-cable.herokuapp.com',
     'http://rails-chat-app-action-cable.herokuapp.com'
