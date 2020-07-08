@@ -25,6 +25,7 @@ $(document).on('turbolinks:load', () => {
     })
 
     $('#new_message').submit(e => {
+      // Don't redirect to rails route
       e.preventDefault()
       const textarea = $(e.target).find('#message_body')
       if ($.trim(textarea.val()).length > 1) {
