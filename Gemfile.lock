@@ -114,6 +114,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rack-timeout (0.6.0)
     rails (6.0.3.2)
       actioncable (= 6.0.3.2)
       actionmailbox (= 6.0.3.2)
@@ -205,6 +206,7 @@ DEPENDENCIES
   listen (~> 3.2)
   pg (~> 0.18.4)
   puma (~> 4.1)
+  rack-timeout
   rails (~> 6.0.3, >= 6.0.3.2)
   redis (~> 4.0)
   sass-rails (>= 6)
